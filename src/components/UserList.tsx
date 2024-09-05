@@ -56,15 +56,15 @@ export const UserList: React.FC = () => {
   return (
     <div className="container">
       <h2>User List</h2>
-      <button onClick={() => navigate("/create")}>Create User</button>
       <ul>
         {users.map((user) => (
           <li key={user.id}>
-            Name: {user.name} - {user.email} - {user.phone}
+             {user.name} - {user.email} - {user.phone}
             <button onClick={() => editUser(user.id)}>Edit</button>
             <button onClick={() => deleteUser(user.id)}>Delete</button>
           </li>
         ))}
+        <button onClick={() => navigate("/create")}>Create User</button>
       </ul>
     </div>
   );

@@ -72,7 +72,7 @@ export const CreateUser: React.FC = () => {
   return (
     //form modle
     <div className="container">
-      <h2 id="H"> {loading ? "processing" : "Create False"}</h2>
+      <h2 id="H"> {loading ? "processing" : "Create User"}</h2>
       <form onSubmit={handleSubmit} className="form">
         <div>
           <label>Name :</label>
