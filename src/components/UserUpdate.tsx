@@ -27,13 +27,12 @@ export const UserUpdate: React.FC = () => {
           `https://jsonplaceholder.typicode.com/users/${id}`
         );
         setUser(response.data);
-        console.log();
+        console.log(response.data);
       } catch (error: any) {
         // if there is some api error issue
 
         setApiError(error);
         console.log(apiError);
-
         navigate("/");
       }
     };
