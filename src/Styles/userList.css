@@ -1,11 +1,7 @@
 
 .container {
     display: flex;
-    display: block;
-    /* position: relative; */
-    margin-left: 200px;
     flex-direction: column;
-    /* justify-content: center; */
     align-items: center;
     padding: 20px;
     background-color: #f9f9f9;
@@ -23,7 +19,6 @@
   }
   
   ul {
-    
     list-style-type: none;
     padding: 0;
     margin: 0;
@@ -71,8 +66,10 @@
   /* Responsive design adjustments */
   @media (max-width: 600px) {
     .container {
-      margin-right: 30px;
       padding: 10px;
+    }
+    .container #H{
+      margin-top: 790px;
     }
   
     ul {
