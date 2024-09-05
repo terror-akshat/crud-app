@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 import toast from "react-hot-toast";
-import "../Styles/create.css";
+import "../Styles/UpdateUser.css";
 import { useNavigate, useParams } from "react-router-dom";
 
 interface User {
